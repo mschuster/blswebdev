@@ -11,6 +11,10 @@ module.exports = {
     {
       name: 'Über Uns',
       link:'/about'
+    },    
+    {
+      name: 'Portfolio',
+      link:'/portfolio'
     },
     {
       name: 'Kontakt',
@@ -23,7 +27,8 @@ module.exports = {
     {
       name: 'Impressum',
       link:'/impressum'
-    },]
+    },
+  ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,7 +45,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remakr`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
