@@ -33,8 +33,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portfolio-pages`,
+        path: `${__dirname}/src/portfolio-pages`,
+      },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remakr`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
