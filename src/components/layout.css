@@ -620,3 +620,13 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.teambox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teambox-item{
+  max-width: 300px;
+  flex: 0 50%;
+}
