@@ -5,28 +5,20 @@ module.exports = {
     author: `Team BLS`,
     menuLinks:[
       {
-        name:'Startseite',
+        name:'HOME',
         link:'/'
       },
     {
-      name: 'Über Uns',
+      name: 'ÜBER UNS',
       link:'/about'
-    },    
-    {
-      name: 'Portfolio',
-      link:'/portfolio'
     },
     {
-      name: 'Kontakt',
+      name: 'KONTAKT',
       link:'/contact'
     },
     {
-      name: 'Dienstleistungen',
+      name: 'SERVICE',
       link:'/services'
-    },
-    {
-      name: 'Impressum',
-      link:'/impressum'
     },
   ]
   },

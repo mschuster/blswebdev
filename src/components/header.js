@@ -5,31 +5,35 @@ import React from "react"
 const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
-      background: `grey`,
+      background: `white`,
       marginBottom: `1rem`,
     }}
   >
+    
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
+        display: 'flex',
+        flexWrap: 'wrap',
         padding: `1rem 1rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ 
+        margin: 0,
+        flex: '0 50%',
+        }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <img src={'../../logo.png'} alt="Logo"></img>
         </Link>
       </h1>
       <div>
           <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
+            <ul style={{ display: "flex", flex: '0 50%' }}>
               {menuLinks.map(link => (
                 <li
                   key={link.name}
@@ -38,14 +42,14 @@ const Header = ({ siteTitle, menuLinks }) => (
                     padding: `1rem`,
                   }}
                 >
-                  <Link style={{ color: `white` }} to={link.link}>
+                  <Link style={{ color: `black` }} to={link.link}>
                     {link.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </nav>
-        </div>
+      </div>
     </div>
   </header>
 )
