@@ -5,8 +5,7 @@ import React from "react"
 const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
-      background: `white`,
-      marginBottom: `1rem`,
+      background: `white`
     }}
   >
     
@@ -14,12 +13,12 @@ const Header = ({ siteTitle, menuLinks }) => (
       style={{
         display: 'flex',
         flexWrap: 'wrap',
-        padding: `1rem 1rem`,
+        padding: `1rem`,
       }}
     >
       <h1 style={{ 
         margin: 0,
-        flex: '0 50%',
+        flex: '0 40%',
         }}>
         <Link
           to="/"
@@ -31,9 +30,8 @@ const Header = ({ siteTitle, menuLinks }) => (
           <img src={'../../logo.png'} alt="Logo"></img>
         </Link>
       </h1>
-      <div>
           <nav>
-            <ul style={{ display: "flex", flex: '0 50%' }}>
+            <ul style={{ display: "flex", flex: 1, position: 'relative' }}>
               {menuLinks.map(link => (
                 <li
                   key={link.name}
@@ -49,7 +47,6 @@ const Header = ({ siteTitle, menuLinks }) => (
               ))}
             </ul>
           </nav>
-      </div>
     </div>
   </header>
 )

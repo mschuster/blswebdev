@@ -12,7 +12,10 @@ const IndexPage = () => (
         
         </div>
       <div class="homepage-item">
-        <div class="homepage-text">
+        <div class="homepage-text" style ={{
+          verticalAlign: 'middle',
+          textAlign: 'middle'
+        }}>
           <h1>BLS WEBSOLUTIONS</h1>
           <hr></hr>
           <h3>INDIVIDUELLES WEBDESIGN</h3>

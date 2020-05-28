@@ -8,9 +8,6 @@ const AboutPage = () => (
     <Layout>
       <SEO title="About" />
       <h1>Über uns</h1>
-      <p>
-      Wir sind ein Team von drei Studenten an der Hochschule Mittweida und bieten ihnen 
-      </p>
       <div class='teambox'>
         <div class='teambox-item'>
           <img src={'../../hiclipart.com.png'} alt="Profile Pciture"></img>

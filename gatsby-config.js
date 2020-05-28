@@ -12,13 +12,14 @@ module.exports = {
       name: 'ÜBER UNS',
       link:'/about'
     },
-    {
-      name: 'KONTAKT',
-      link:'/contact'
-    },
+    
     {
       name: 'SERVICE',
       link:'/services'
+    },
+    {
+      name: 'KONTAKT',
+      link:'/contact'
     },
   ]
   },
@@ -34,7 +35,7 @@ module.exports = {
       options: {
         name: `portfolio-pages`,
         path: `${__dirname}/src/portfolio-pages`,
-      },
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
