@@ -25,6 +25,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,11 +34,11 @@ module.exports = {
       },
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `portfolio-pages`,
-        path: `${__dirname}/src/portfolio-pages`,
+        name: `portfolio`,
+        path:`./data`
       }
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {

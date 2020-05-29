@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Finanzkompass Görlitz",
+        "slug": "finanzkompass",
+        "url": "https://finanzkompass.netlify.app",
+        "image": "./images/finanzkompass.png",
+        "description": "Erstes Projekt von BLS Websolutions."
+    },
+    {
+        "title": "Dummy Test",
+        "slug": "dummy",
+        "url": "https://www.google.com",
+        "image": "./images/dummy.jpg",
+        "description": "Dummy Test"
+    }
+]

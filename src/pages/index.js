@@ -8,7 +8,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div class="homepage">
       <div class="homepage-item">
-        <img src={'../../dev_image.png'} Alt="Dev Image"></img>
+        <img src={'../../dev_image.png'} Alt="Sinnbild"></img>
         
         </div>
       <div class="homepage-item">
