@@ -16,7 +16,7 @@ const IndexPage = () => (
           verticalAlign: 'middle',
           textAlign: 'middle'
         }}>
-          <h1>BLS WEBSOLUTIONS</h1>
+          <h1>Webiverse</h1>
           <hr></hr>
           <h3>INDIVIDUELLES WEBDESIGN</h3>
           <h5>ANGEPASST AN IHRE BEDÜRFNISSE</h5>

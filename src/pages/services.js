@@ -10,9 +10,8 @@ const ServicesPage = () => (
     <ul>
       <li>Web Design/Programmierung</li>
       <li>SEO</li>
-      <li>APP Entwicklung?</li>
-      <li>Corporate Desing Erstellung?</li>
-
+      <li>APP Entwicklung</li>
+      <li>Corporate Desing Erstellung</li>
     </ul>
     
   </Layout>

@@ -6,21 +6,24 @@ module.exports = {
     menuLinks:[
       {
         name:'HOME',
-        link:'/'
+        link: '/'
       },
-    {
-      name: 'ÜBER UNS',
-      link:'/about'
-    },
-    
-    {
-      name: 'SERVICE',
-      link:'/services'
-    },
-    {
-      name: 'KONTAKT',
-      link:'/contact'
-    },
+      {
+        name: 'ÜBER UNS',
+        link: '/about'
+      },
+      {
+        name: 'Porfolio',
+        link: 'portfolio'
+      },
+      {
+        name: 'SERVICE',
+        link: '/services'
+      },
+      {
+        name: 'KONTAKT',
+        link: '/contact'
+      },
   ]
   },
   plugins: [

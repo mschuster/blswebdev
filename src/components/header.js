@@ -27,15 +27,16 @@ const Header = ({ siteTitle, menuLinks }) => (
             textDecoration: `none`,
           }}
         >
-          <img src={'../../logo.png'} alt="Logo"></img>
+          <h1>Webiverse</h1>
         </Link>
       </h1>
           <nav>
-            <ul style={{ display: "flex", flex: 1, position: 'relative' }}>
+            <ul style={{ display: 'flex', flex: 1, position: 'relative', fontFamily: 'sans-serif' , textDecoration: 'none'}}>
               {menuLinks.map(link => (
                 <li
                   key={link.name}
                   style={{
+                    textDecoration: 'none',
                     listStyleType: `none`,
                     padding: `1rem`,
                   }}

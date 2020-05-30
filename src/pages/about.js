@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 
 const AboutPage = () => (
     <Layout>
@@ -24,7 +23,6 @@ const AboutPage = () => (
         </div>
       </div>
 
-    <h3>Unser <Link to="/portfolio">Portfolio</Link></h3>
 
     </Layout>
   )
