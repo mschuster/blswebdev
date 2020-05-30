@@ -656,3 +656,21 @@ pre tt:after {
 .headerbox-item{
   flex: 0 50%;
 }
+
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the navbar links */
+#navbar a {
+  
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
