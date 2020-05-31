@@ -17,16 +17,16 @@ const ContactPage = () => (
         <p class="hidden" style={{display:'none'}}>
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
         </p>
-        <input name="name" placeholder="Name" type="text" />
+        <input name="name" placeholder="Name" id='name' type="text" />
         <br />
         <br />
-        <input name="email" placeholder="Ihre E-mail Adresse" type="email" />
+        <input name="email" placeholder="Ihre E-mail Adresse" id='email' type="email" />
         <br />
         <br />
-        <textarea name="message" />
+        <textarea name="message" id='message' />
         <br />
         <br />
-        <button>Senden</button>
+        <button type='submit'>Senden</button>
       </form>
     </p>
   </Layout>
