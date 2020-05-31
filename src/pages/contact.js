@@ -7,16 +7,17 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     <h1>Kontaktformular</h1>
-    <p>
+
       <form
         name="contact"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        <p class="hidden" style={{display:'none'}}>
+        <p style={{display:'none'}}>
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
         </p>
+        <input type="hidden" name="form-name" value="contact" />
         <input name="name" placeholder="Name" type="text" />
         <br />
         <br />
@@ -26,9 +27,9 @@ const ContactPage = () => (
         <textarea name="message" />
         <br />
         <br />
-        <button>Senden</button>
+        <button type='submit'>Senden</button>
       </form>
-    </p>
+
   </Layout>
 )
 
