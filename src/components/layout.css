@@ -634,20 +634,6 @@ pre tt:after {
   flex: 0 50%;
 }
 
-.homepage{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.homepage-item{
-  flex: 0 50%;
-}
-
-.homepage-text{
-  text-align: center;
-  color: #6a39a1;
-}
-
 .headerbox{
     display: flex;
     flex-wrap: wrap;

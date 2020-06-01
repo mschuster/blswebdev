@@ -1,8 +1,8 @@
 import React from "react"
-import { graphql, useStaticQuery} from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PortfolioPreview from '../components/portfolio-preview';
+import PortfolioPreview from "../components/portfolio-preview"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -25,51 +25,62 @@ export default () => {
         }
       }
     }
-  `);
+  `)
 
-  const portfolioprojects = data.allPortfolioJson.edges;
+  const portfolioprojects = data.allPortfolioJson.edges
   return (
     <Layout>
-
-<SEO title="Home" />
-    <div class="homepage">
-      <div class="homepage-item">
-        <img src={'../../dev_image.png'} Alt="Sinnbild"></img>
-        
-        </div>
-      <div class="homepage-item">
-        <div class="homepage-text" style ={{
-          verticalAlign: 'middle',
-          textAlign: 'middle'
-        }}>
+      <SEO title="Home" />
+      <div style={{display: 'flex', flexWrap: 'wrap'}}>
+        <img
+          src={"../../dev_image.png"}
+          alt="Sinnbild"
+          style={{ width: "50%", float: "left" }}
+        ></img>
+        <div
+          style={{
+            width: "50%",
+            float: "right",
+            textAlign: "center",
+            verticalAlign: 'center',
+            marginTop: '10rem',
+            color: "white",
+          }}
+        >
           <h1>Webiverse</h1>
-          <hr></hr>
-          <h3>INDIVIDUELLES WEBDESIGN</h3>
-          <h5>ANGEPASST AN IHRE BEDÜRFNISSE</h5>
+          <hr
+            style={{
+              height: "2px",
+              borderWidth: "0",
+              color: "white",
+              backgroundColor: "white",
+            }}
+          />
+          <h2>INDIVIDUELLES WEBDESIGN</h2>
+          <h4>ANGEPASST AN IHRE BEDÜRFNISSE</h4>
         </div>
       </div>
-    </div>
 
-    <h3>Portfolio Übersicht</h3>
-      {portfolioprojects.map(({node: project}) => {
-        const title = project.title;
-        const description = project.description;
-        const slug = project.slug;
-        const imageData = project.image.childImageSharp.fluid;
-        const url = project.url;
+      <div style={{margin: '0 1rem 0 1rem'}}>
+        <h3 style={{color:'white'}}>UNSER PORTFOLIO</h3>
+        {portfolioprojects.map(({ node: project }) => {
+          const title = project.title
+          const description = project.description
+          const slug = project.slug
+          const imageData = project.image.childImageSharp.fluid
+          const url = project.url
 
-        return (
-          <PortfolioPreview
-            title={title}
-            description={description}
-            imageData={imageData}
-            slug={slug}
-            url={url}
-          />
-        );
-      })}
-      
+          return (
+            <PortfolioPreview
+              title={title}
+              description={description}
+              imageData={imageData}
+              slug={slug}
+              url={url}
+            />
+          )
+        })}
+      </div>
     </Layout>
-  );
+  )
 }
-

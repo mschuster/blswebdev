@@ -5,14 +5,13 @@ import React from "react"
 const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
-      background: `white`,
+      background: `black`,
     }}
   >
     <div
       style={{
         display: "flex",
         flexWrap: "wrap",
-        padding: `1rem`,
       }}
     >
       <div id="navbar">
@@ -25,7 +24,7 @@ const Header = ({ siteTitle, menuLinks }) => (
           <Link
             to="/"
             style={{
-              color: `black`,
+              color: `white`,
               textDecoration: `none`,
             }}
           >
@@ -49,7 +48,7 @@ const Header = ({ siteTitle, menuLinks }) => (
                 padding: `1rem`,
               }}
             >
-              <Link style={{ color: `black` }} to={link.link}>
+              <Link style={{ color: `white` }} to={link.link}>
                 {link.name}
               </Link>
             </li>

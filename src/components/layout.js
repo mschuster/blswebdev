@@ -29,27 +29,37 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+      <Header
+        menuLinks={data.site.siteMetadata.menuLinks}
+        siteTitle={data.site.siteMetadata.title}
+      />
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          background: "gray",
         }}
       >
-        
         <main>{children}</main>
         <footer>
-          <div style={{float: "right"}}>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby,</a>
-            &nbsp;&nbsp;
-            <Link to='/impressum'>Impressum</Link>
-          </div>
-          
-        </footer>
+        <div
+          style={{ background: "black", color: "white", textAlign: "right", paddingRight: '1rem', height:'50px'}}
+        >
+          <Link
+            tp="/contact"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Kontakt
+          </Link>
+          &emsp;
+          <Link
+            to="/impressum"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Impressum
+          </Link>
+        </div>
+      </footer>
       </div>
+      
     </>
   )
 }

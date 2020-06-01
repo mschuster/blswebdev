@@ -20,10 +20,6 @@ module.exports = {
         name: 'SERVICE',
         link: '/services'
       },
-      {
-        name: 'KONTAKT',
-        link: '/contact'
-      },
   ]
   },
   plugins: [
