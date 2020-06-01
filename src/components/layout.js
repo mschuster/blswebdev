@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
       />
       <div
         style={{
-          background: "gray",
+          background: 'gray'
         }}
       >
         <main>{children}</main>
