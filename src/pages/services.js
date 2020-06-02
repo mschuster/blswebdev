@@ -6,16 +6,17 @@ import SEO from "../components/seo"
 const ServicesPage = () => (
   <Layout>
     <SEO title="Services" />
-    <h1 style={{color: 'white', marginLeft: '1rem'}}>Dienstleistungen</h1>
+    <h1 style={{color:'white', marginLeft: '1rem'}}>Dienstleistungen</h1>
 
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
         marginRight: '1rem',
-        marginLeft: '1rem'
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -46,11 +47,12 @@ const ServicesPage = () => (
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
         marginRight: '1rem',
-        marginLeft: '1rem'
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -79,11 +81,12 @@ const ServicesPage = () => (
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
         marginRight: '1rem',
-        marginLeft: '1rem'
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -111,11 +114,12 @@ const ServicesPage = () => (
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
         marginRight: '1rem',
-        marginLeft: '1rem'
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -144,11 +148,12 @@ const ServicesPage = () => (
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
         marginRight: '1rem',
-        marginLeft: '1rem'
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
