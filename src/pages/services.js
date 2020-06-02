@@ -6,14 +6,17 @@ import SEO from "../components/seo"
 const ServicesPage = () => (
   <Layout>
     <SEO title="Services" />
-    <h1>Dienstleistungen</h1>
+    <h1 style={{color:'white', marginLeft: '1rem'}}>Dienstleistungen</h1>
 
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
+        marginRight: '1rem',
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -21,7 +24,15 @@ const ServicesPage = () => (
         alt="pic"
         style={{ width: "20%", float: "left" }}
       />
-      <div style={{ width: "70%", float: "right", marginTop:'1rem', marginRight: "1rem" }}>
+      <div
+        style={{
+          width: "70%",
+          float: "right",
+          marginTop: "1rem",
+          marginRight: "1rem",
+          
+        }}
+      >
         <h3>Web Design & Programmierung</h3>
 
         <p>
@@ -36,9 +47,12 @@ const ServicesPage = () => (
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
+        marginRight: '1rem',
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -46,7 +60,14 @@ const ServicesPage = () => (
         alt="pic"
         style={{ width: "20%", float: "right" }}
       />
-      <div style={{ width: "70%", float: "left", marginTop:'1rem', marginLeft: "1rem" }}>
+      <div
+        style={{
+          width: "70%",
+          float: "left",
+          marginTop: "1rem",
+          marginLeft: "1rem",
+        }}
+      >
         <h3>Suchmaschienen Optiemierung</h3>
 
         <p>
@@ -60,9 +81,12 @@ const ServicesPage = () => (
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
+        marginRight: '1rem',
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -70,7 +94,14 @@ const ServicesPage = () => (
         alt="pic"
         style={{ width: "20%", float: "left" }}
       />
-      <div style={{ width: "70%", float: "right", marginTop:'1rem', marginRight: "1rem" }}>
+      <div
+        style={{
+          width: "70%",
+          float: "right",
+          marginTop: "1rem",
+          marginRight: "1rem",
+        }}
+      >
         <h3>App Entwicklung</h3>
 
         <p>
@@ -83,9 +114,12 @@ const ServicesPage = () => (
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
+        marginRight: '1rem',
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -93,7 +127,14 @@ const ServicesPage = () => (
         alt="pic"
         style={{ width: "20%", float: "right" }}
       />
-      <div style={{ width: "70%", float: "left",marginTop:'1rem', marginLeft: "1rem" }}>
+      <div
+        style={{
+          width: "70%",
+          float: "left",
+          marginTop: "1rem",
+          marginLeft: "1rem",
+        }}
+      >
         <h3>Corporate Design Entwicklung</h3>
 
         <p>
@@ -107,9 +148,12 @@ const ServicesPage = () => (
     <div
       className="services"
       style={{
-        background: "white",
+        background:'rgba(255,255,255,0.5)',
         display: "inline-block",
         border: "dotted 3px black",
+        marginRight: '1rem',
+        marginLeft: '1rem',
+        color: 'white'
       }}
     >
       <img
@@ -117,11 +161,19 @@ const ServicesPage = () => (
         alt="pic"
         style={{ width: "20%", float: "left" }}
       />
-      <div style={{ width: "70%", float: "right", marginTop:'1rem', marginRight: "1rem" }}>
+      <div
+        style={{
+          width: "70%",
+          float: "right",
+          marginTop: "1rem",
+          marginRight: "1rem",
+        }}
+      >
         <h3>Support</h3>
 
         <p>
-          Wenn Sie es wünschen bieten wir Ihnen, nach Erflogreichem Auftragsabschluss zusätzlichen Support an.
+          Wenn Sie es wünschen bieten wir Ihnen, nach Erflogreichem
+          Auftragsabschluss zusätzlichen Support an.
         </p>
       </div>
     </div>

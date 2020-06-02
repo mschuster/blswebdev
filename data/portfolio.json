@@ -11,6 +11,13 @@
         "slug": "dummy",
         "url": "https://www.google.com",
         "image": "./images/dummy.jpg",
-        "description": "Dummy Test"
+        "description": "Dummy Test."
+    },
+    {
+        "title": "Webiverse Homepage",
+        "slug": "webiverse",
+        "url": "http://webiverse.netlify.app/",
+        "image": "./images/webiverse.jpg",
+        "description": "Unser eigene Homepage."
     }
 ]
