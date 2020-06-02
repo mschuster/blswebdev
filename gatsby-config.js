@@ -13,7 +13,7 @@ module.exports = {
         link: '/about'
       },
       {
-        name: 'Portfolio',
+        name: 'PORTFOLIO',
         link: 'portfolio'
       },
       {
