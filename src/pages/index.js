@@ -3,6 +3,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PortfolioPreview from "../components/portfolio-preview"
+import Carousel, { Dots } from "@brainhubeu/react-carousel"
+import "@brainhubeu/react-carousel/lib/style.css"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +33,7 @@ export default () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div style={{display: 'flex', flexWrap: 'wrap'}}>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
         <img
           src={"../../dev_image.png"}
           alt="Sinnbild"
@@ -42,8 +44,8 @@ export default () => {
             width: "50%",
             float: "right",
             textAlign: "center",
-            verticalAlign: 'center',
-            marginTop: '10rem',
+            verticalAlign: "center",
+            marginTop: "10rem",
             color: "white",
           }}
         >
@@ -61,25 +63,29 @@ export default () => {
         </div>
       </div>
 
-      <div style={{margin: '0 1rem 0 1rem'}}>
-        <h3 style={{color:'white'}}>UNSER PORTFOLIO</h3>
-        {portfolioprojects.map(({ node: project }) => {
-          const title = project.title
-          const description = project.description
-          const slug = project.slug
-          const imageData = project.image.childImageSharp.fluid
-          const url = project.url
+      <div>
+        <h3 style={{ color: "white" }}>UNSER PORTFOLIO</h3>
+        <Carousel slidesPerPage={3} centered
+  dots arrows infinite autoPlay={2000}
+  animationSpeed={1000}>
+          {portfolioprojects.map(({ node: project }) => {
+            const title = project.title
+            const description = project.description
+            const slug = project.slug
+            const imageData = project.image.childImageSharp.fluid
+            const url = project.url
 
-          return (
-            <PortfolioPreview
-              title={title}
-              description={description}
-              imageData={imageData}
-              slug={slug}
-              url={url}
-            />
-          )
-        })}
+            return (
+              <PortfolioPreview
+                title={title}
+                description={description}
+                imageData={imageData}
+                slug={slug}
+                url={url}
+              />
+            )
+          })}
+        </Carousel>
       </div>
     </Layout>
   )
