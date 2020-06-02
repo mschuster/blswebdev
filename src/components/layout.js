@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           style={{ background: "black", color: "white", textAlign: "right", paddingRight: '1rem', height:'50px'}}
         >
           <Link
-            tp="/contact"
+            to="/contact"
             style={{ color: "white", textDecoration: "none" }}
           >
             Kontakt
