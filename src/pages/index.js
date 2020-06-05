@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PortfolioPreview from "../components/portfolio-preview"
-import Carousel, { Dots } from "@brainhubeu/react-carousel"
+import Carousel from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 
 export default () => {

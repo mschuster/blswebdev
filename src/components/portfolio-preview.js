@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 
 const PortfolioPreview = ({ slug, url, title, imageData, description }) => (
-  <div className="portfolio-previews" style={{margin:'0 1rem 1rem 1rem', maxWidth:'600px', border:'2px solid white'}}>
+  <div className="portfolio-previews" style={{margin:'0 1rem 1rem 1rem', width:'600px', height:'480px', maxWidth:'600px', border:'2px solid white'}}>
     <Link to={`/${slug}/`}>
       <Image fluid={imageData} alt={title} />
     </Link>
