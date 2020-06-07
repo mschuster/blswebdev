@@ -15,12 +15,7 @@ const Header = ({ siteTitle, menuLinks }) => (
       }}
     >
       <div id="navbar">
-        <h1
-          style={{
-            margin: 0,
-            flex: "0 40%",
-          }}
-        >
+        <div>
           <Link
             to="/"
             style={{
@@ -28,32 +23,38 @@ const Header = ({ siteTitle, menuLinks }) => (
               textDecoration: `none`,
             }}
           >
-            <h1>Webiverse</h1>
+              <img
+                src={"../../Logo11_white.png"}
+                alt="Webiverse"
+                style={{height: "100px"}}
+                />
           </Link>
-        </h1>
-        <ul
-          style={{
-            display: "flex",
-            flex: 1,
-            fontFamily: "sans-serif",
-            textDecoration: "none",
-          }}
-        >
-          {menuLinks.map(link => (
-            <li
-              key={link.name}
+        </div>
+        <div>
+            <ul
               style={{
+                display: "flex",
+                flex: 1,
+                fontFamily: "sans-serif",
                 textDecoration: "none",
-                listStyleType: `none`,
-                padding: `1rem`,
               }}
             >
-              <Link style={{ color: `white` }} to={link.link}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+              {menuLinks.map(link => (
+                <li
+                  key={link.name}
+                  style={{
+                    textDecoration: "none",
+                    listStyleType: `none`,
+                    padding: `1rem`,
+                  }}
+                >
+                  <Link style={{ color: `white` }} to={link.link}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+        </div>
       </div>
     </div>
   </header>

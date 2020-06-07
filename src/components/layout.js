@@ -35,27 +35,32 @@ const Layout = ({ children }) => {
       />
       <div
         style={{
-          background: 'gray'
+          background: 'dimgrey'
         }}
       >
         <main>{children}</main>
         <footer>
-        <div
-          style={{ background: "black", color: "white", textAlign: "right", paddingRight: '1rem', height:'50px'}}
-        >
-          <Link
-            to="/contact"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Kontakt
-          </Link>
-          &emsp;
-          <Link
-            to="/impressum"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Impressum
-          </Link>
+        <div className="footer">
+            <img
+                src={"../../Logo11.png"}
+                alt="Webiverse"
+                style={{height: "50px", alignSelf: "center"}}
+            />
+            <div>
+                <Link
+                    to="/contact"
+                    style={{ color: "white", textDecoration: "none" }}
+                >
+                    Kontakt
+                </Link>
+                &emsp;
+                <Link
+                    to="/impressum"
+                    style={{ color: "white", textDecoration: "none" }}
+                >
+                    Impressum
+                </Link>
+            </div>
         </div>
       </footer>
       </div>

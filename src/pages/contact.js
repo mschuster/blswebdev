@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Kontaktformular</h1>
+    <h1 style={{ marginLeft: "20vw", paddingTop: "10vh" }}>Kontaktformular</h1>
 
       <form
         name="contact"
@@ -24,7 +24,7 @@ const ContactPage = () => (
         <input name="email" placeholder="Ihre E-mail Adresse" type="email" />
         <br />
         <br />
-        <textarea name="message" />
+        <textarea name="message" placeholder="Nachricht"/>
         <br />
         <br />
         <button type='submit'>Senden</button>

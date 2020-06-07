@@ -185,7 +185,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em Verdana, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -199,7 +199,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: hsla(0, 0%, 100%, 0.8);
   background-color: #fdf1ff;
   font-family: georgia, serif;
   font-weight: normal;
@@ -219,7 +219,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 h1 {
   margin-left: 0;
@@ -625,13 +624,22 @@ pre tt:after {
 }
 
 .teambox{
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 8vw 0 8vw;
+    font-family: sans-serif;
+    color: white;
 }
 
 .teambox-item{
-  max-width: 300px;
-  flex: 0 50%;
+    max-width: 300px;
+    flex: 0 50%;
+    text-align: center;
+    margin: 8vh 0 8vh 0;
+}
+.teambox-item > img {
+    border-radius: 50%;
 }
 
 .headerbox{
@@ -644,19 +652,81 @@ pre tt:after {
 }
 
 #navbar {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: .5vw;
 }
 
 /* Style the navbar links */
 #navbar a {
-  
   color: white;
   text-align: center;
   text-decoration: none;
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+    text-decoration: underline;
+}
+footer {
+  font-family: Verdana, sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  text-align: right;
+  padding: 2rem;
+  height:50px;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-family: Verdana, sans-serif;
+  width: 100%;
+}
+
+textarea {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  resize: vertical;
+  font-family: Verdana, sans-serif;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+form {
+  margin: 0 20vw 5vh 20vw;
+}
+
+form > button {
+  font-family: Verdana, sans-serif;
   color: black;
+  background: white;
+  border: none;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+form > button:hover {
+  color: white;
+  background: darkgray;
+}
+
+form > * {
+  margin-top: 3vh;
 }

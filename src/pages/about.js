@@ -6,20 +6,40 @@ import SEO from "../components/seo"
 const AboutPage = () => (
     <Layout>
       <SEO title="About" />
-      <h1>Über uns</h1>
       <div class='teambox'>
         <div class='teambox-item'>
-          <img src={'../../hiclipart.com.png'} alt="Profile Pciture"></img>
-          Susan Labude (Desing)
+          <img src={'../../Susi.jpeg'} alt="Profile Pciture"></img>
+            <h2>Susan Labude</h2>
+            Designer
+            <hr
+                style={{
+                    backgroundColor: 'white'
+                }}/>
+            Co-founder spezialisiert in Usability. Liebt Cookies. <br/>
+            Lieblingsfarbe: #22A892
         </div>
         <div class='teambox-item'>
-          <img src={'../../hiclipart.com.png'} alt="Profile Pciture"></img>
-          Dominik Breck (Tech)
+          <img src={'../../Dominik.jpeg'} alt="Profile Pciture"></img>
+            <h2>Dominik Breck</h2>
+            Web Developer
+            <hr
+                style={{
+                    backgroundColor: 'white'
+                }}/>
+            Co-founder spezialisiert in Probs bauen mit einer speziellen Vorliebe für Heißdrahtschneider. <br/>
+            Lieblingsschriftart: Comic Sans
           </div>
         
         <div class='teambox-item'>
-         <img src={'../../hiclipart.com.png'} alt="Profile Pciture"></img>
-         Martin Schuster (Tech)
+         <img src={'../../Martin.jpeg'} alt="Profile Pciture"></img>
+            <h2>Martin Schuster</h2>
+            Web Developer
+            <hr
+                style={{
+                    backgroundColor: 'white'
+                }}/>
+            Co-founder und Mitarbeiter des Monats - jeden Monat. <br/>
+            Lieblingsdrink: Tripple-M
         </div>
       </div>
 
