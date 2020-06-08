@@ -66,7 +66,7 @@ export default () => {
       <div>
         <h3 style={{ color: "white" }}>UNSER PORTFOLIO</h3>
         <Carousel slidesPerPage={3} centered
-  dots arrows infinite autoPlay={2000}
+  dots arrows infinite autoPlay={5000}
   animationSpeed={1000}>
           {portfolioprojects.map(({ node: project }) => {
             const title = project.title
