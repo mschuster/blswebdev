@@ -47,12 +47,14 @@ const Layout = ({ children }) => {
                 style={{height: "50px", alignSelf: "center"}}
             />
             <div>
+              {/*
                 <Link
                     to="/contact"
                     style={{ color: "white", textDecoration: "none" }}
                 >
                     Kontakt
                 </Link>
+              */}
                 &emsp;
                 <Link
                     to="/impressum"
